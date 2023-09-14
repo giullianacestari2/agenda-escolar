@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabela HTML</title>
+</head>
+<body>
+
+    <div class="div-titulo">
+        <h2 class="titulo">Meu planner de estudos</h2>
+        <button class="botao adicionar" id="adicionarLinha">+</button>
+        <button class="botao exibir" id="exibirValores">Mostrar atividades</button>
+        <button class="botao filtrar" id="">Filtrar por disciplina</button>
+        <button class="botao ordenar" id="">Ordenar por prioridade</button>        
+    </div>
+    
+
+    <section class="secao-tabela">
+        <table>
+            <thead>
+                <tr class="tabela-completa">
+                    <th>Disciplina</th>
+                    <th>Tarefa</th>
+                    <th>Prazo</th>
+                    <th>Feito</th>
+                    <th>Progresso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" name="" id="" list="lista">
+                        <datalist id="lista">
+                            <option value="portugues">Português</option>
+                            <option value="matematica">Matemática</option>
+                            <option value="ciencias">Ciências</option>
+                        </datalist>
+                    </td>
+                    <td><input type="text" value="Tarefa"></td>
+                    <td><input type="date" name="" id="Prazo"></td>
+                    <td><input type="checkbox" value="Feito"></td>
+                    <td id="resultado-progresso"></td>
+                </tr>
+    
+            </tbody>
+        </table>
+
+        <div class="botoes-disciplina">
+            <button class="filtrar-disciplina" id="filtrarMatematica"> Matemática</button>
+            <button class="filtrar-disciplina" id="filtrarPortugues">Português</button>
+            <button class="filtrar-disciplina" id="filtrarCiencias">Ciências</button>
+        </div>
+
+    </section>
+
+    <script src="app/script.js"></script>
+    <script src="app/metodoFilter.js"></script>
+</body>
+</html>
